@@ -4,6 +4,6 @@ export const Header = () => {
   return(
     <h2>
     Transaction Application
-    <h2/>
+    </h2>
   );
 }
