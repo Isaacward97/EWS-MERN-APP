@@ -53,11 +53,7 @@ h4{
   border-right: 1px solid #dedede;
 }
 
-<<<<<<< HEAD
-.incomeout-container {
-=======
-.inc-exp-container {
->>>>>>> 1e47dcbbe0efdd9610d95f48acce9752793a901b
+.Incomeout-container {
   background-color: #fff;
   box-shadow: var(--box-shadow);
   padding: 20px;
