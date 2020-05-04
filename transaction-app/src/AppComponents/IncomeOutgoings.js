@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const IncomeOutgoings = () +> {
+export const IncomeOutgoings = () => {
   return (
     <div class ="Incomeout-container"
       <div>
