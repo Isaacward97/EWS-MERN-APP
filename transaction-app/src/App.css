@@ -43,3 +43,8 @@ h4{
   margin: 0;
   text-transform: uppercase;
 }
+
+.Incomeout-container > div{
+  flex: 1;
+  text-align: center;
+}
