@@ -17,8 +17,9 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  min-width: inherit;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .container{
@@ -34,7 +35,7 @@ h1{
 }
 
 h3{
-  border-bottom: 1px solid #bbb;
+  border-bottom: 5px solid #0c1f87;
   padding-bottom: 10px;
   margin: 40px 0 12px;
 }
@@ -50,7 +51,7 @@ h4{
 }
 
 .Incomeout-container > div:first-of-type {
-  border-right: 1px solid #dedede;
+  border-right: 3px solid #0c1f87;
 }
 
 .Incomeout-container {
@@ -74,4 +75,60 @@ h4{
 
 .money.out {
   color: #c0392b;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #f7f7f7;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  border: 5px solid #dedede;
+  padding: 15px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 15px;
+  margin: 5px 0;
+}
+
+.list li.negative {
+  border-bottom: 5px solid #DC143C;
 }
