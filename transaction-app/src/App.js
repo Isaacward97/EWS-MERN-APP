@@ -8,8 +8,9 @@ function App() {
   return (
     <div>
       <Header/>
-      <div classname="container">
-      <Balance/>
+      <div className="container">
+        <Balance/>
+      </div>
     </div>
   );
 }
