@@ -2,7 +2,7 @@ import React from 'react'
 
 export const IncomeOutgoings = () => {
   return (
-    <div class ="Incomeout-container"
+    <div class ="Incomeout-container">
       <div>
         <h4>Income:</h4>
         <p id="money-add" class="money add">+£0.00</p>
