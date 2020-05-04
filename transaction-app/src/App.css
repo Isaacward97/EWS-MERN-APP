@@ -48,3 +48,21 @@ h4{
   flex: 1;
   text-align: center;
 }
+
+.Incomeout-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.add {
+  color: #2ecc71;
+}
+
+.money.out {
+  color: #c0392b;
+}
