@@ -53,6 +53,15 @@ h4{
   border-right: 1px solid #dedede;
 }
 
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
 .money {
   font-size: 20px;
   letter-spacing: 1px;
