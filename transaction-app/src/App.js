@@ -4,6 +4,7 @@ import {Balance} from './AppComponents/Balance';
 import {IncomeOutgoings} from './AppComponents/IncomeOutgoings';
 import {TransactionHistory} from './AppComponents/TransactionHistory';
 import {NewTransaction} from './AppComponents/NewTransaction';
+import {Nav} from './AppComponents/Nav';
 
 import {GlobalProvider} from './context/GlobalState';
 import './App.css';
@@ -11,6 +12,7 @@ import './App.css';
 function App() {
   return (
     <GlobalProvider>
+      <Nav/>
       <Header/>
       <div className="container">
         <Balance/>

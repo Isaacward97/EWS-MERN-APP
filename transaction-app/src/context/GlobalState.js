@@ -14,12 +14,12 @@ export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   // Actions
-  function RemoveTransaction(id) {
-    dispatch({
-      type: 'DELETE_TRANSACTION',
-      payload: id
-    });
-  }
+    function RemoveTransaction(id) {
+      dispatch({
+        type: 'DELETE_TRANSACTION',
+        payload: id
+      });
+    }
 
   function nTransaction(transaction) {
     dispatch({

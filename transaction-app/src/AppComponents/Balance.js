@@ -14,7 +14,7 @@ export const Balance = () => {
   return (
     //displays the balance as "total" parameter
     <div>
-      <h4>Available Balance</h4>
+      <h4>Total Available:</h4>
       <h1>£{total}</h1>
     </div>
   );
