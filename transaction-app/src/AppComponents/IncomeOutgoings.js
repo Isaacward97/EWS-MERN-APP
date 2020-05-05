@@ -21,12 +21,12 @@ export const IncomeOutgoings = () => {
 
 
   return (
-    <div className ="Incomeout-container">
-      <div>
+    <div className = "totaltransaction">
+      <div className ="Incomein-container">
         <h4>Income:</h4>
         <p className ="money add">£{income}</p>
       </div>
-      <div>
+      <div className ="Incomeout-container">
         <h4>Outgoings:</h4>
         <p className ="money out">£{outgoing}</p>
       </div>
