@@ -21,7 +21,7 @@ export const NewTransaction = () => {
   }
 
   return (
-    <>
+    <div className="createaction">
       <h3>Create New Transaction</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
@@ -37,6 +37,6 @@ export const NewTransaction = () => {
         </div>
         <button className="btn">Add transaction</button>
       </form>
-    </>
+    </div>
   )
 }

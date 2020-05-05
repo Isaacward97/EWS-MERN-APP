@@ -20,13 +20,37 @@ body {
   font-family: 'Century Gothic', sans-serif;
 }
 
-.container{
-  margin: 25px auto;
+.Money{
   width: 40%;
-  display:inherit;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto;
+
 }
 
+.accHist{
+    margin: 55px auto;
+    padding-right: 20vh;
+    width: 45%;
+    float: right;
+}
 
+.createaction{
+  float: left;
+  margin: 55px auto;
+  padding-left: 20vh;
+  width: 45%;
+}
+
+/* .container{
+  margin: 25px auto;
+  width: 40%;
+} */
+
+/* .container2{
+  margin: 25px auto;
+  height: 80%;
+} */
 
 
 /*Headers css for balance text*/
@@ -124,7 +148,7 @@ background-color: #4c5187;
 
 .list {
   list-style-type: none;
-  padding: 0;
+  padding: 25px;
   margin-bottom: 40px;
 }
 
@@ -172,8 +196,8 @@ background-color: #4c5187;
   background-color: #13285e;
   width: 100%;
   align-items: center;
-  justify-content: center;
   display: flex;
+  justify-content:space-between;
 
 }
 
