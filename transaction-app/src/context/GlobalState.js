@@ -19,10 +19,18 @@ export const GlobalProvider = ({children}) => {
   //dispatch for reducer action
   const [state, dispatch] = useReducer(AppReducer, InitialState);
 
+//actions
+function RemoveTransaction(id){
+  dispatch({
+    type:'REMOVE_TRANSACTION',
+    payload: id
+  });
+}
 
 //provides states and actions to wrapped components
   return (<GlobalContext.Provider value ={{
-      transactions: state.transactions
+      transactions: state.transactions,
+      RemoveTransaction
   }}>
     {children}
   </GlobalContext.Provider>);
