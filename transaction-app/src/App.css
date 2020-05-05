@@ -111,6 +111,10 @@ input[type='number'] {
   width: 100%;
 }
 
+.btn:hover{
+background-color: #4c5187;
+}
+
 .btn:focus,
 .remove-btn:focus {
   outline: 0;
@@ -165,7 +169,7 @@ input[type='number'] {
 
 .topnav {
   overflow: hidden;
-  background-color: #293185;
+  background-color: #13285e;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -183,8 +187,8 @@ input[type='number'] {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #4c5187;
+  color: white;
 }
 
 .topnav a.active {
