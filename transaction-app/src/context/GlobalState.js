@@ -1,39 +1,37 @@
-import React, {createContext, useReducer } from 'react';
+import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
-// Create inital state
-const InitialState = {
+// Initial state
+const initialState = {
   transactions: []
 }
 
-// Create the context
-export const GlobalContext = createContext(InitialState);
+// Create context
+export const GlobalContext = createContext(initialState);
 
-//Set up provider component
-export const GlobalProvider = ({children}) => {
-  //dispatch for reducer action
-  const [state, dispatch] = useReducer(AppReducer, InitialState);
+// Provider component
+export const GlobalProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(AppReducer, initialState);
 
-//actions
-function RemoveTransaction(id){
-  dispatch({
-    type:'REMOVE_TRANSACTION',
-    payload: id
-  });
-}
+  // Actions
+  function RemoveTransaction(id) {
+    dispatch({
+      type: 'DELETE_TRANSACTION',
+      payload: id
+    });
+  }
 
-function AddTransaction(transaction){
-  dispatch({
-    type:'ADD_TRANSACTION',
-    payload: transaction
-  });
-}
+  function nTransaction(transaction) {
+    dispatch({
+      type: 'ADD_TRANSACTION',
+      payload: transaction
+    });
+  }
 
-//provides states and actions to wrapped components
-  return (<GlobalContext.Provider value ={{
-      transactions: state.transactions,
-      RemoveTransaction,
-      AddTransaction
+  return (<GlobalContext.Provider value={{
+    transactions: state.transactions,
+    RemoveTransaction,
+    nTransaction
   }}>
     {children}
   </GlobalContext.Provider>);
