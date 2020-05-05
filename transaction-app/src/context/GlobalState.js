@@ -3,12 +3,7 @@ import AppReducer from './AppReducer';
 
 // Create inital state
 const InitialState = {
-  transactions: [
-    //Test Transactions
-       { id: 1, text: 'Food', amount: -30 },
-       { id: 2, text: 'Wage', amount: 750 },
-       { id: 3, text: 'Xbox', amount: -50 },
-  ]
+  transactions: []
 }
 
 // Create the context
@@ -27,10 +22,18 @@ function RemoveTransaction(id){
   });
 }
 
+function AddTransaction(transaction){
+  dispatch({
+    type:'ADD_TRANSACTION',
+    payload: transaction
+  });
+}
+
 //provides states and actions to wrapped components
   return (<GlobalContext.Provider value ={{
       transactions: state.transactions,
-      RemoveTransaction
+      RemoveTransaction,
+      AddTransaction
   }}>
     {children}
   </GlobalContext.Provider>);
