@@ -134,6 +134,10 @@ input[type='number'] {
   margin: 5px 0;
 }
 
+.list li.positive {
+  border-bottom: 5px solid #53e64e;
+}
+
 .list li.negative {
   border-bottom: 5px solid #DC143C;
 }
