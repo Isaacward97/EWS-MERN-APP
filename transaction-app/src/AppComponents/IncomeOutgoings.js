@@ -24,11 +24,11 @@ export const IncomeOutgoings = () => {
     <div className ="Incomeout-container">
       <div>
         <h4>Income:</h4>
-        <p className ="money add">{income}</p>
+        <p className ="money add">£{income}</p>
       </div>
       <div>
         <h4>Outgoings:</h4>
-        <p className ="money out">{outgoing}</p>
+        <p className ="money out">£{outgoing}</p>
       </div>
     </div>
   )
