@@ -1,4 +1,4 @@
-const Transaction = require('../model/Transaction');
+const Transaction = require('../model/transaction');
 
 
 // Route is GET /api/v1/Transactions

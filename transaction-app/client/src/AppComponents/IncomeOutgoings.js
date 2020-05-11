@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import {GlobalContext} from '../context/GlobalState';
+import {GlobalContext} from '../state/GlobalState';
 
 export const IncomeOutgoings = () => {
   const {transactions} = useContext(GlobalContext);

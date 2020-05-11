@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 
 import {Transaction} from './Transaction';
 
-import {GlobalContext} from '../context/GlobalState';
+import {GlobalContext} from '../state/GlobalState';
 
 //pulls out the gettransactions from the state
 export const TransactionHistory = () => {

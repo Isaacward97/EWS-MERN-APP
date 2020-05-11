@@ -4,7 +4,7 @@ import {Balance} from './AppComponents/Balance';
 import {IncomeOutgoings} from './AppComponents/IncomeOutgoings';
 import {TransactionHistory} from './AppComponents/TransactionHistory';
 import {NewTransaction} from './AppComponents/NewTransaction';
-import {GlobalProvider} from './context/GlobalState';
+import {GlobalProvider} from './state/GlobalState';
 import {BrowserRouter} from 'react-router-dom';
 import './App.css';
 
